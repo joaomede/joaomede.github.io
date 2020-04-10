@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>João M.</title>
+  
+  <subtitle>João M.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://joaomede.github.io/"/>
+  <updated>2020-04-10T19:16:22.146Z</updated>
+  <id>http://joaomede.github.io/</id>
+  
+  <author>
+    <name>João Medeiros</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Api Doc</title>
+    <link href="http://joaomede.github.io/2020/04/10/apidoc/"/>
+    <id>http://joaomede.github.io/2020/04/10/apidoc/</id>
+    <published>2020-04-10T17:31:05.000Z</published>
+    <updated>2020-04-10T19:16:22.146Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Sobre&quot;&gt;&lt;a href=&quot;#Sobre&quot; class=&quot;headerlink&quot; title=&quot;Sobre&quot;&gt;&lt;/a&gt;Sobre&lt;/h2&gt;&lt;p&gt;Há algum tempo pensei em desenvolver uma ferramenta
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://joaomede.github.io/categories/Open-Source/"/>
+    
+    
+      <category term="typescript" scheme="http://joaomede.github.io/tags/typescript/"/>
+    
+      <category term="javascript" scheme="http://joaomede.github.io/tags/javascript/"/>
+    
+      <category term="vuejs" scheme="http://joaomede.github.io/tags/vuejs/"/>
+    
+      <category term="quasar.dev" scheme="http://joaomede.github.io/tags/quasar-dev/"/>
+    
+      <category term="SDK" scheme="http://joaomede.github.io/tags/SDK/"/>
+    
+      <category term="Library" scheme="http://joaomede.github.io/tags/Library/"/>
+    
+  </entry>
+  
+</feed>
