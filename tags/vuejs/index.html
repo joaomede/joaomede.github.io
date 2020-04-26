@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<head>
+<head><link rel=manifest href=/manifest.json>
     <meta charset="utf-8">
     <meta name="keywords" content="Tag: vuejs, João M.">
     <meta name="description" content="Personal Blog / Portfolio">
@@ -453,6 +453,11 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1587928441654')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
 
 </html>
