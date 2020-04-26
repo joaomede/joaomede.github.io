@@ -11,7 +11,8 @@ $(function () {
             try {
                 document.execCommand('copy') // Security exception may be thrown by some browsers.
                 $(ctx).prev('.codecopy_notice')
-                    .text("复制成功")
+                    .text("
+                    Cópia bem sucedida")
                     .animate({
                         opacity: 1,
                         top: 30
