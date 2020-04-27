@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
+    <loc>http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</loc>
     
-    <lastmod>2020-04-26T21:31:50.855Z</lastmod>
+    <lastmod>2020-04-27T23:39:59.951Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
     
-    <lastmod>2020-04-26T21:19:08.430Z</lastmod>
+    <lastmod>2020-04-27T17:41:46.209Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
+    
+    <lastmod>2020-04-27T17:38:08.222Z</lastmod>
     
   </url>
   
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/categories/opensource.html</loc>
+    <loc>http://joaomede.github.io/categories/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/categories/index.html</loc>
+    <loc>http://joaomede.github.io/categories/opensource.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -86,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/vuejs.html</loc>
+    <loc>http://joaomede.github.io/tags/typescript.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/typescript.html</loc>
+    <loc>http://joaomede.github.io/tags/vuejs.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     

@@ -19,7 +19,7 @@
 self.addEventListener('install', function () { return self.skipWaiting(); });
 self.addEventListener('active', function () { return self.clients.claim(); });
 
-toolbox.precache(['/','/2020/04/26/apidoc-sdk-create-a-doc-02/','/2020/04/26/apidoc-sdk-introduction-01/','/2020/04/10/apidoc/']);
+toolbox.precache(['/','/2020/04/27/apidoc-sdk-semantics-and-standardization-03/','/2020/04/26/apidoc-sdk-create-a-doc-02/','/2020/04/26/apidoc-sdk-introduction-01/','/2020/04/10/apidoc/']);
 toolbox.options = {"networkTimeoutSeconds":5};
 
 toolbox.router.any(/hm.baidu.com/, toolbox.networkOnly);

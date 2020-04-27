@@ -4,7 +4,7 @@
 
 <head><link rel=manifest href=/manifest.json>
     <meta charset="utf-8">
-    <meta name="keywords" content="Api Doc - SDK - Introduction - 01, João M.">
+    <meta name="keywords" content="Api Doc - SDK - Semantics and Standardization - 03, João M.">
     <meta name="description" content="Personal Blog / Portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Api Doc - SDK - Introduction - 01 | João M.</title>
+    <title>Api Doc - SDK - Semantics and Standardization - 03 | João M.</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -222,12 +222,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/assets/data/apidoc/electronDesktop.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Api Doc - SDK - Introduction - 01</h1>
+                    <h1 class="description center-align post-title">Api Doc - SDK - Semantics and Standardization - 03</h1>
                 </div>
             </div>
         </div>
@@ -392,7 +392,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-04-26
+                    2020-04-27
                 </div>
                 
 
@@ -401,14 +401,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    451
+                    272
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -418,83 +418,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Api-Doc-The-SDK"><a href="#Api-Doc-The-SDK" class="headerlink" title="Api Doc - The SDK"></a>Api Doc - The SDK</h2><p>Esta é a uma série de postagens que serão numeradas para facilitar o entendimento.</p>
-<p>O projeto api doc - sdk js, é atualmente um submodulo do projeto principal, “Api Doc”, trata-se de uma abstração das regras crud do sistema principal, contendo o ORM “knex” como pacote principal, onde todos os métodos encapsulam as regras do sistema “Api Doc”</p>
-<h2 id="Use-Case"><a href="#Use-Case" class="headerlink" title="Use Case"></a>Use Case</h2><p>Caso um desenvolvor queira iniciar um gerencidor de Documentação de API, ele pode usar essa SDK para começar um novo sistema, inclusive, uma nova API,<br>basicamente, é necessário instalar o pacote SDK e começar a diversão.</p>
-<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><p>Importando o pacote e configurando o “Knex”, muito parecido com a forma original de configuração “Knex”.</p>
-<p>Além de configurar o “Knex”, para acesso ao banco de dados, é necessário também definir uma chave de API, todos os tokens serão gerados com base nesta chave.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> ApiDoc <span class="token keyword">from</span> <span class="token string">"api-doc-js-doc"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
-  dev<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    client<span class="token punctuation">:</span> <span class="token string">"pg"</span><span class="token punctuation">,</span>
-    connection<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      port<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>PORTDB<span class="token punctuation">,</span>
-      host<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>HOSTDB<span class="token punctuation">,</span>
-      user<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>POSTGRES_USER<span class="token punctuation">,</span>
-      password<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>POSTGRES_PASSWORD<span class="token punctuation">,</span>
-      database<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>POSTGRES_DB<span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    pool<span class="token punctuation">:</span> <span class="token punctuation">{</span> min<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> idleTimeoutMillis<span class="token punctuation">:</span> <span class="token number">500</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">ApiDoc</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>dev<span class="token punctuation">,</span> <span class="token string">"TheApiSecretKey"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="Importing-the-Instance"><a href="#Importing-the-Instance" class="headerlink" title="Importing the Instance"></a>Importing the Instance</h2><p>Após definir a configuração básica do pacote, é necessário importar a instancia e chamar os métodos</p>
-<h4 id="Register-New-User"><a href="#Register-New-User" class="headerlink" title="Register New User"></a>Register New User</h4><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">"name"</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> email <span class="token operator">=</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> password <span class="token operator">=</span> <span class="token string">"passwordTest"</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// Async Await / Try Catch</span>
-<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">newUserAsyncAwait</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">try</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> apiDoc<span class="token punctuation">.</span><span class="token function">userRegister</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> email<span class="token punctuation">,</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return new user</span>
-  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return an eventual error</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// or</span>
-
-<span class="token comment" spellcheck="true">// Then Catch</span>
-apiDoc
-  <span class="token punctuation">.</span><span class="token function">userRegister</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> email<span class="token punctuation">,</span> password<span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>newUser<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newUser<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return new user</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return an eventual error</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h4 id="Get-a-JWT-Login-Authentication"><a href="#Get-a-JWT-Login-Authentication" class="headerlink" title="Get a JWT (Login/Authentication)"></a>Get a JWT (Login/Authentication)</h4><p>Para realizar uma autenticação, basta usar o método “userAuth”, passando email e senha como parâmetros, que a sdk vai retornar o objeto “usuário” e um token de JWT para válido.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> email <span class="token operator">=</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> password <span class="token operator">=</span> <span class="token string">"passwordTest"</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// Async Await / Try Catch</span>
-<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">try</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> apiDoc<span class="token punctuation">.</span><span class="token function">userAuth</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> email<span class="token punctuation">,</span> password<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// or</span>
-
-<span class="token comment" spellcheck="true">// Then Catch</span>
-apiDoc
-  <span class="token punctuation">.</span><span class="token function">userAuth</span><span class="token punctuation">(</span>email<span class="token punctuation">,</span> password<span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>userAndToken<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>userAndToken<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return user/token jwt</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return an eventual error</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                <h2 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h2><p>Desde já deixo claro que não sou nenhum especialista no assunto, como informado no “about”, sou apenas um estudante de Análise e Desenvolvimento de Sistemas, buscando sempre se aperfeiçoar. Esta SDK é um laborário, mas para além disso, também é uma ferramenta que levo a sério, dito isso, falarei um pouco sobre a padronização e samântica que apliquei em todas as funções da aplicação.</p>
+<h2 id="Create-Delete-Update-And-More"><a href="#Create-Delete-Update-And-More" class="headerlink" title="Create, Delete, Update And More"></a>Create, Delete, Update And More</h2><p>Observem no <strong>IntelliSense</strong> que quando digitado “cre”, automaticamente surge todos os métodos “create” disponível na sdk.</p>
+<p><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-create.png" alt="Create"></p>
+<p>O mesmo acontece com todos os outros métodos, segue abaixo exemplos.</p>
+<p><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-del.png" alt="Delete"><br><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-get.png" alt="Get"><br><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-update.png" alt="Update"></p>
+<h2 id="IntelliSense-Highlights-and-Standardization"><a href="#IntelliSense-Highlights-and-Standardization" class="headerlink" title="IntelliSense, Highlights and Standardization"></a>IntelliSense, Highlights and Standardization</h2><p>Caso o programador digite “ById”, o <strong>IntelliSense</strong> vai exibir todos os métodos que contenham “ID”, ou seja, “get by id”, “update by id”, além disso, me preocupei também com os sentidos quantitativos,<br>Por exemplo: “get one” para listar um ou “get all” para listar todos, outra questão que também me preocupei foi o retorno dos métodos, caso você chame “get one”, receberá sempre um objeto, caso chame “get all” receberá sempre um array, independentemente da quantidade desse array, é claro que boa parte dessa padronização ainda precisam de revisões, mas acredito que consegui impor uma boa padronização e semântica no projeto.</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -538,7 +467,7 @@ apiDoc
                     </i>
                 </span>
                 <span class="reprint-info" style="word-wrap: break-word;">
-                    <a href="http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/">http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</a>
+                    <a href="http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/">http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -635,29 +564,30 @@ apiDoc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/04/26/apidoc-sdk-create-a-doc-02/">
+                <a href="/2020/04/27/apidoc-sdk-semantics-and-standardization-03/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Create a Doc - 02">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Api Doc - SDK - Semantics and Standardization - 03">
                         
-                        <span class="card-title">Api Doc - SDK - Create a Doc - 02</span>
+                        <span class="card-title">Api Doc - SDK - Semantics and Standardization - 03</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Como criar uma documentaçao, usando a SDK do Api Doc
+                            Nesse post falarei um pouco sobre a semântica da "Api Doc - SDK" e preocupações que tive com sua padronização.
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -670,6 +600,7 @@ apiDoc
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -704,23 +635,24 @@ apiDoc
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/10/apidoc/">
+                <a href="/2020/04/26/apidoc-sdk-create-a-doc-02/">
                     <div class="card-image">
                         
-                        <img src="/assets/data/apidoc/electronDesktop.png" class="responsive-img" alt="Api Doc">
                         
-                        <span class="card-title">Api Doc</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Create a Doc - 02">
+                        
+                        <span class="card-title">Api Doc - SDK - Create a Doc - 02</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Api Doc é um projeto open source que visa facilitar a documentação e tests de Api Rest.
+                            Como criar uma documentaçao, usando a SDK do Api Doc
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
                             </span>
                         <span class="publish-author">
                             
@@ -753,12 +685,8 @@ apiDoc
                         <span class="chip bg-color">Library</span>
                     </a>
                     
-                    <a href="/tags/vuejs/">
-                        <span class="chip bg-color">vuejs</span>
-                    </a>
-                    
-                    <a href="/tags/quasar-dev/">
-                        <span class="chip bg-color">quasar.dev</span>
+                    <a href="/tags/NPM/">
+                        <span class="chip bg-color">NPM</span>
                     </a>
                     
                 </div>

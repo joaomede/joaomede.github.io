@@ -401,7 +401,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    208
+                    214
                 </div>
                 
 
@@ -420,20 +420,20 @@
             <div id="articleContent">
                 <h2 id="Create-documentation"><a href="#Create-documentation" class="headerlink" title="Create documentation"></a>Create documentation</h2><p>Para criar uma nova documentação, basta chamar o método “createNewApiDoc”, onde será necessário passar o “ID” do usuário e um payload, contendo o objeto a ser criado,<br>abaixo segue um exemplo de como criar o objeto e a estrutura do payload.</p>
 <h3 id="The-Payload"><a href="#The-Payload" class="headerlink" title="The Payload"></a>The Payload</h3><pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"apiName"</span><span class="token operator">:</span> <span class="token string">"teste"</span><span class="token punctuation">,</span>
-  <span class="token property">"descriptionApi"</span><span class="token operator">:</span> <span class="token string">"teste"</span><span class="token punctuation">,</span>
-  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"teste"</span><span class="token punctuation">,</span>
-  <span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"teste"</span><span class="token punctuation">,</span>
-  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"teste"</span><span class="token punctuation">,</span>
+  <span class="token property">"apiName"</span><span class="token operator">:</span> <span class="token string">"Api Test"</span><span class="token punctuation">,</span>
+  <span class="token property">"descriptionApi"</span><span class="token operator">:</span> <span class="token string">"This Api is an Test"</span><span class="token punctuation">,</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"v1.0.0"</span><span class="token punctuation">,</span>
+  <span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">,</span>
+  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"MIT"</span><span class="token punctuation">,</span>
   <span class="token property">"isPublic"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  <span class="token property">"baseURL"</span><span class="token operator">:</span> <span class="token string">"teste"</span>
+  <span class="token property">"baseURL"</span><span class="token operator">:</span> <span class="token string">"http://localhost:3000"</span>
 <span class="token punctuation">}</span></code></pre>
 <h3 id="The-Method"><a href="#The-Method" class="headerlink" title="The Method"></a>The Method</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">store</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">try</span> <span class="token punctuation">{</span>
     <span class="token keyword">await</span> apiDoc<span class="token punctuation">.</span><span class="token function">createNewApiDoc</span><span class="token punctuation">(</span>userId<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    resp<span class="token punctuation">.</span><span class="token function">returnSucessMessage</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> <span class="token string">"Api adicionada com sucesso"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'sucess'</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    resp<span class="token punctuation">.</span><span class="token function">returnErrorMessage</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> error<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
@@ -587,30 +587,29 @@ apiDoc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/04/26/apidoc-sdk-create-a-doc-02/">
+                <a href="/2020/04/27/apidoc-sdk-semantics-and-standardization-03/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Create a Doc - 02">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Api Doc - SDK - Semantics and Standardization - 03">
                         
-                        <span class="card-title">Api Doc - SDK - Create a Doc - 02</span>
+                        <span class="card-title">Api Doc - SDK - Semantics and Standardization - 03</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Como criar uma documentaçao, usando a SDK do Api Doc
+                            Nesse post falarei um pouco sobre a semântica da "Api Doc - SDK" e preocupações que tive com sua padronização.
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -623,7 +622,6 @@ apiDoc
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -661,9 +659,9 @@ apiDoc
                 <a href="/2020/04/26/apidoc-sdk-introduction-01/">
                     <div class="card-image">
                         
-                        <img src="/assets/data/apidoc/electronDesktop.png" class="responsive-img" alt="Api Doc - SDK JS - Introduction - 01">
+                        <img src="/assets/data/apidoc/electronDesktop.png" class="responsive-img" alt="Api Doc - SDK - Introduction - 01">
                         
-                        <span class="card-title">Api Doc - SDK JS - Introduction - 01</span>
+                        <span class="card-title">Api Doc - SDK - Introduction - 01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -848,7 +846,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             <!-- Copyright&nbsp;&copy; -->
-            <span id="year">2019</span>
+            <span id="year">2020</span>
             <a href="http://joaomede.github.io" target="_blank">João Medeiros</a>
             <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com//" target="_blank">Matery</a>
@@ -947,7 +945,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1587939599440')
+  navigator.serviceWorker.register('/sw.js?t=1588030894021')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
