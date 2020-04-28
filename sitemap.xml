@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
     
-    <lastmod>2020-04-28T21:43:15.551Z</lastmod>
+    <lastmod>2020-04-28T22:06:47.773Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
+    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
     
-    <lastmod>2020-04-28T21:31:23.547Z</lastmod>
+    <lastmod>2020-04-28T21:43:15.551Z</lastmod>
     
   </url>
   
@@ -58,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/index.html</loc>
+    <loc>http://joaomede.github.io/categories/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -72,20 +72,6 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/javascript.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://joaomede.github.io/categories/opensource.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
@@ -93,7 +79,14 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/sdk.html</loc>
+    <loc>http://joaomede.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/tags/javascript.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -107,7 +100,7 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/vuejs.html</loc>
+    <loc>http://joaomede.github.io/tags/sdk.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -115,6 +108,13 @@
   
   <url>
     <loc>http://joaomede.github.io/tags/typescript.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/tags/vuejs.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
