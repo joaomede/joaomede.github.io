@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
+    
+    <lastmod>2020-04-28T21:43:15.551Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
+    
+    <lastmod>2020-04-28T21:31:23.547Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/tags/tests.html</loc>
+    
+    <lastmod>2020-04-28T20:43:58.716Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</loc>
     
     <lastmod>2020-04-27T23:39:59.951Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
     
     <lastmod>2020-04-27T17:41:46.209Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
-    
-    <lastmod>2020-04-27T17:38:08.222Z</lastmod>
     
   </url>
   
@@ -44,20 +58,6 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/about/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://joaomede.github.io/tags/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/categories/opensource.html</loc>
+    <loc>http://joaomede.github.io/about/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -79,7 +79,14 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/quasar.dev.html</loc>
+    <loc>http://joaomede.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/categories/opensource.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -93,7 +100,7 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/tags/typescript.html</loc>
+    <loc>http://joaomede.github.io/tags/quasar.dev.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -101,6 +108,13 @@
   
   <url>
     <loc>http://joaomede.github.io/tags/vuejs.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/tags/typescript.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     

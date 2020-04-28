@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joaomede.github.io/"/>
-  <updated>2020-04-27T23:39:59.951Z</updated>
+  <updated>2020-04-28T21:43:15.551Z</updated>
   <id>http://joaomede.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Api Doc - SDK - Tests - 04</title>
+    <link href="http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/"/>
+    <id>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</id>
+    <published>2020-04-28T22:00:25.000Z</published>
+    <updated>2020-04-28T21:43:15.551Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;The-Tests&quot;&gt;&lt;a href=&quot;#The-Tests&quot; class=&quot;headerlink&quot; title=&quot;The Tests&quot;&gt;&lt;/a&gt;The Tests&lt;/h3&gt;&lt;p&gt;A “Api Doc - SDK” tem como objetivo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://joaomede.github.io/categories/Open-Source/"/>
+    
+    
+      <category term="typescript" scheme="http://joaomede.github.io/tags/typescript/"/>
+    
+      <category term="javascript" scheme="http://joaomede.github.io/tags/javascript/"/>
+    
+      <category term="SDK" scheme="http://joaomede.github.io/tags/SDK/"/>
+    
+      <category term="Library" scheme="http://joaomede.github.io/tags/Library/"/>
+    
+      <category term="NPM" scheme="http://joaomede.github.io/tags/NPM/"/>
+    
+      <category term="Tests" scheme="http://joaomede.github.io/tags/Tests/"/>
+    
+  </entry>
   
   <entry>
     <title>Api Doc - SDK - Semantics and Standardization - 03</title>
@@ -56,7 +93,7 @@
     <link href="http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/"/>
     <id>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</id>
     <published>2020-04-26T20:59:25.000Z</published>
-    <updated>2020-04-27T17:38:08.222Z</updated>
+    <updated>2020-04-28T21:31:23.547Z</updated>
     
     <summary type="html">
     
@@ -64,7 +101,7 @@
       
         
         
-          &lt;h2 id=&quot;Create-documentation&quot;&gt;&lt;a href=&quot;#Create-documentation&quot; class=&quot;headerlink&quot; title=&quot;Create documentation&quot;&gt;&lt;/a&gt;Create
+          &lt;h3 id=&quot;Create-documentation&quot;&gt;&lt;a href=&quot;#Create-documentation&quot; class=&quot;headerlink&quot; title=&quot;Create documentation&quot;&gt;&lt;/a&gt;Create
         
       
     
