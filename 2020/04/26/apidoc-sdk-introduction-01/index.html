@@ -296,19 +296,12 @@
     }
 
     #toc-content .toc-link:hover {
-        color: #42b983;
         font-weight: 700;
-        text-decoration: underline;
+      
     }
+      
 
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
 
-        position: absolute !important;
-        right: 91%;
-        display: block;
-    }
 
     .toc-fixed .toc-link::before{
         position: fixed!important;/*当toc的位置改为fixed时，.toc-link::before也要改为fixed*/
@@ -796,7 +789,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Topics</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -997,7 +990,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588033415747')
+  navigator.serviceWorker.register('/sw.js?t=1588035337513')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
