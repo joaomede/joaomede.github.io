@@ -336,8 +336,7 @@
 </style>
 <div class="row">
     <div id="main-content" class="col s12 m12 l9">
-        <meta name="description" content="Api Doc SDK é uma ferramenta de auxilio a construção de um aplicações para criar documentações de API.">
-<div id="artDetail">
+        <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
@@ -412,10 +411,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Api-Doc-The-SDK"><a href="#Api-Doc-The-SDK" class="headerlink" title="Api Doc - The SDK"></a>Api Doc - The SDK</h2><p>Esta é a uma série de postagens que serão numeradas para facilitar o entendimento.</p>
+                <h3 id="Api-Doc-The-SDK"><a href="#Api-Doc-The-SDK" class="headerlink" title="Api Doc - The SDK"></a>Api Doc - The SDK</h3><p>Esta é a uma série de postagens que serão numeradas para facilitar o entendimento.</p>
 <p>O projeto api doc - sdk js, é atualmente um submodulo do projeto principal, “Api Doc”, trata-se de uma abstração das regras crud do sistema principal, contendo o ORM “knex” como pacote principal, onde todos os métodos encapsulam as regras do sistema “Api Doc”</p>
-<h2 id="Use-Case"><a href="#Use-Case" class="headerlink" title="Use Case"></a>Use Case</h2><p>Caso um desenvolvor queira iniciar um gerencidor de Documentação de API, ele pode usar essa SDK para começar um novo sistema, inclusive, uma nova API,<br>basicamente, é necessário instalar o pacote SDK e começar a diversão.</p>
-<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><p>Importando o pacote e configurando o “Knex”, muito parecido com a forma original de configuração “Knex”.</p>
+<h3 id="Use-Case"><a href="#Use-Case" class="headerlink" title="Use Case"></a>Use Case</h3><p>Caso um desenvolvor queira iniciar um gerencidor de Documentação de API, ele pode usar essa SDK para começar um novo sistema, inclusive, uma nova API,<br>basicamente, é necessário instalar o pacote SDK e começar a diversão.</p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>Importando o pacote e configurando o “Knex”, muito parecido com a forma original de configuração “Knex”.</p>
 <p>Além de configurar o “Knex”, para acesso ao banco de dados, é necessário também definir uma chave de API, todos os tokens serão gerados com base nesta chave.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> ApiDoc <span class="token keyword">from</span> <span class="token string">"api-doc-js-doc"</span><span class="token punctuation">;</span>
 
@@ -434,8 +433,8 @@
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">ApiDoc</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>dev<span class="token punctuation">,</span> <span class="token string">"TheApiSecretKey"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="Importing-the-Instance"><a href="#Importing-the-Instance" class="headerlink" title="Importing the Instance"></a>Importing the Instance</h2><p>Após definir a configuração básica do pacote, é necessário importar a instancia e chamar os métodos</p>
-<h4 id="Register-New-User"><a href="#Register-New-User" class="headerlink" title="Register New User"></a>Register New User</h4><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
+<h3 id="Importing-the-Instance"><a href="#Importing-the-Instance" class="headerlink" title="Importing the Instance"></a>Importing the Instance</h3><p>Após definir a configuração básica do pacote, é necessário importar a instancia e chamar os métodos</p>
+<h3 id="Register-New-User"><a href="#Register-New-User" class="headerlink" title="Register New User"></a>Register New User</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">"name"</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> email <span class="token operator">=</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">;</span>
@@ -462,7 +461,7 @@ apiDoc
   <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return an eventual error</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h4 id="Get-a-JWT-Login-Authentication"><a href="#Get-a-JWT-Login-Authentication" class="headerlink" title="Get a JWT (Login/Authentication)"></a>Get a JWT (Login/Authentication)</h4><p>Para realizar uma autenticação, basta usar o método “userAuth”, passando email e senha como parâmetros, que a sdk vai retornar o objeto “usuário” e um token de JWT para válido.</p>
+<h3 id="Get-a-JWT-Login-Authentication"><a href="#Get-a-JWT-Login-Authentication" class="headerlink" title="Get a JWT (Login/Authentication)"></a>Get a JWT (Login/Authentication)</h3><p>Para realizar uma autenticação, basta usar o método “userAuth”, passando email e senha como parâmetros, que a sdk vai retornar o objeto “usuário” e um token de JWT para válido.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> email <span class="token operator">=</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">;</span>
@@ -995,7 +994,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588114151637')
+  navigator.serviceWorker.register('/sw.js?t=1588159119619')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

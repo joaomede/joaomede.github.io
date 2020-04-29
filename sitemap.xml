@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
+    
+    <lastmod>2020-04-29T11:18:27.828Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
     
     <lastmod>2020-04-28T22:27:40.660Z</lastmod>
@@ -30,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
-    
-    <lastmod>2020-04-27T17:41:46.209Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://joaomede.github.io/tags/library.html</loc>
     
     <lastmod>2020-04-26T19:56:35.672Z</lastmod>
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/categories/index.html</loc>
+    <loc>http://joaomede.github.io/about/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/about/index.html</loc>
+    <loc>http://joaomede.github.io/categories/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
