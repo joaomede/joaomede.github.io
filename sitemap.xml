@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://joaomede.github.io/2020/05/02/resp-express/</loc>
+    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
     
-    <lastmod>2020-05-03T00:18:55.523Z</lastmod>
+    <lastmod>2020-05-03T14:49:14.662Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
+    <loc>http://joaomede.github.io/2020/05/02/resp-express/</loc>
     
-    <lastmod>2020-05-02T22:49:38.746Z</lastmod>
+    <lastmod>2020-05-03T00:18:55.523Z</lastmod>
     
   </url>
   
@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://joaomede.github.io/categories/opensource.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
@@ -94,6 +87,13 @@
   
   <url>
     <loc>http://joaomede.github.io/tags/javascript.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/categories/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
