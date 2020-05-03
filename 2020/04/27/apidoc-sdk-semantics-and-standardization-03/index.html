@@ -394,7 +394,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    272
+                    253
                 </div>
                 
 
@@ -411,12 +411,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h2><p>Desde já deixo claro que não sou nenhum especialista no assunto, como informado no “about”, sou apenas um estudante de Análise e Desenvolvimento de Sistemas, buscando sempre se aperfeiçoar. Esta SDK é um laborário, mas para além disso, também é uma ferramenta que levo a sério, dito isso, falarei um pouco sobre a padronização e samântica que apliquei em todas as funções da aplicação.</p>
-<h2 id="Create-Delete-Update-And-More"><a href="#Create-Delete-Update-And-More" class="headerlink" title="Create, Delete, Update And More"></a>Create, Delete, Update And More</h2><p>Observem no <strong>IntelliSense</strong> que quando digitado “cre”, automaticamente surge todos os métodos “create” disponível na sdk.</p>
+                <h2 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h2><p>Desde já deixo claro que não sou nenhum especialista no assunto, como informado no “about”, sou apenas um estudante de Análise e Desenvolvimento de Sistemas buscando sempre se aperfeiçoar.<br>Esta SDK é um laborário, mas para além disso, também é uma ferramenta que levo a sério, dito isso, falarei um pouco sobre a padronização e samântica que apliquei em todas as funções da aplicação.</p>
+<h2 id="Create-Delete-Update-And-More"><a href="#Create-Delete-Update-And-More" class="headerlink" title="Create, Delete, Update And More"></a>Create, Delete, Update And More</h2><p>Observem no <strong>IntelliSense</strong> que quando digitado “cre”, automaticamente surgem todos os métodos “create…” disponível na sdk.</p>
 <p><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-create.png" alt="Create"></p>
 <p>O mesmo acontece com todos os outros métodos, segue abaixo exemplos.</p>
 <p><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-del.png" alt="Delete"><br><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-get.png" alt="Get"><br><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-update.png" alt="Update"></p>
-<h2 id="IntelliSense-Highlights-and-Standardization"><a href="#IntelliSense-Highlights-and-Standardization" class="headerlink" title="IntelliSense, Highlights and Standardization"></a>IntelliSense, Highlights and Standardization</h2><p>Caso o programador digite “ById”, o <strong>IntelliSense</strong> vai exibir todos os métodos que contenham “ID”, ou seja, “get by id”, “update by id”, além disso, me preocupei também com os sentidos quantitativos,<br>Por exemplo: “get one” para listar um ou “get all” para listar todos, outra questão que também me preocupei foi o retorno dos métodos, caso você chame “get one”, receberá sempre um objeto, caso chame “get all” receberá sempre um array, independentemente da quantidade desse array, é claro que boa parte dessa padronização ainda precisam de revisões, mas acredito que consegui impor uma boa padronização e semântica no projeto.</p>
+<h2 id="IntelliSense-Highlights-and-Standardization"><a href="#IntelliSense-Highlights-and-Standardization" class="headerlink" title="IntelliSense, Highlights and Standardization"></a>IntelliSense, Highlights and Standardization</h2><p>Caso digite “ById”, o <strong>IntelliSense</strong> vai exibir todos os métodos que contenham “ID”, ou seja, “get by id”, “update by id”, além disso, me preocupei também com os sentidos quantitativos.<br>Por exemplo: <strong>“get one”</strong> para listar um ou <strong>“get all”</strong> para listar todos.<br>Pensando nos retornos dos métodos, caso você chame <strong>“get one”</strong>, receberá sempre um <strong>objeto</strong>, caso chame <strong>“get all”</strong> receberá sempre um <strong>array</strong>, independentemente da quantidade desse array.</p>
+<p>Ainda falta alguns ajustes relacionado a essa padronização e o projeto está aberto a <strong>pull requests</strong>.</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -924,7 +925,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588159119619')
+  navigator.serviceWorker.register('/sw.js?t=1588465201336')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

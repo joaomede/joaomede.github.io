@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
+    <loc>http://joaomede.github.io/2020/05/02/resp-express/</loc>
     
-    <lastmod>2020-04-29T11:18:27.828Z</lastmod>
+    <lastmod>2020-05-03T00:18:55.523Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
     
-    <lastmod>2020-04-28T22:27:40.660Z</lastmod>
+    <lastmod>2020-05-02T22:49:38.746Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</loc>
+    
+    <lastmod>2020-05-02T22:38:37.089Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
     
-    <lastmod>2020-04-28T22:06:47.773Z</lastmod>
+    <lastmod>2020-05-02T22:34:13.863Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
+    
+    <lastmod>2020-05-02T22:33:56.327Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>http://joaomede.github.io/tags/tests.html</loc>
     
     <lastmod>2020-04-28T20:43:58.716Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</loc>
-    
-    <lastmod>2020-04-27T23:39:59.951Z</lastmod>
     
   </url>
   
@@ -58,21 +65,14 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/about/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://joaomede.github.io/categories/opensource.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/about/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     
@@ -87,6 +87,13 @@
   
   <url>
     <loc>http://joaomede.github.io/tags/javascript.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/categories/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     

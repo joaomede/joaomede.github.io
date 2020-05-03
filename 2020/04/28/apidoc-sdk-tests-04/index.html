@@ -398,14 +398,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    494
+                    384
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    2 Min
                 </div>
                 
 
@@ -415,7 +415,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="The-Tests"><a href="#The-Tests" class="headerlink" title="The Tests"></a>The Tests</h3><p>A “Api Doc - SDK” tem como objetivo principal, abstrair as regras do API Rest do projeto principal e encapsulá-las, como os métodos de chamadas de banco de dados, usando a tecnologia “Knex”, sendo assim, a menor unidade da SDK pode ser testada, nesse sentido, fez muito sentido utilizar os tests unitários no projeto, o “Knex” permite mudança de banco de dados, então decidi usar o SQLite nas rotinas de tests.<br>Dito isso, utilizei a estrategia, de durante os “push” para o repositório “Git”, utilizar integração continua “CI” para executar os tests.</p>
+                <h3 id="The-Tests"><a href="#The-Tests" class="headerlink" title="The Tests"></a>The Tests</h3><p>E chegamos na minha parte favorita, os tests!<br>A “Api Doc - SDK” tem como objetivo principal abstrair as regras do API Rest do projeto principal e encapsulá-las.<br>Os métodos realizam, em sua maioria, chamadas de banco de dados, usando a tecnologia “Knex” e todos são exportados individualmente, sendo assim, a menor unidade da SDK pode ser testada, permitindo a implementação dos tests unitários.<br>Pensando em “CI”, passei a executar os tests após os push no projeto “Git”.</p>
 <h3 id="Running-Tests-And-Continuous-Integration"><a href="#Running-Tests-And-Continuous-Integration" class="headerlink" title="Running Tests And Continuous Integration"></a>Running Tests And Continuous Integration</h3><p>Após o push para o respitório Git, a integração continua entra em ação, realizando o script de tests já pré-definido para o projetos, seguindo a seguinte ordem:</p>
 <ol>
 <li>Instalação</li>
@@ -424,11 +424,10 @@
 </ol>
 <p><img src="/assets/data/apidoc-sdk-tests-04/logTest.png" alt="All tests"></p>
 <p><img src="/assets/data/apidoc-sdk-tests-04/finish-test-log.png" alt="Result"></p>
-<h3 id="The-Coverage"><a href="#The-Coverage" class="headerlink" title="The Coverage"></a>The Coverage</h3><p>Após finalizado o test, é gerado um relátorio que informa qual é a cobertura do código, a “coverage”.<br>Basicamente, esse relatório explica quais regiões do código os tests estão “fracos” ou “fortes”, permitindo assim, que o “Tester” saiba exatamente quais funções estão sendo negligênciadas, permitindo a criação de tests para aquela determinada região/função.<br>Um outro ponto importante dos testes unitários, é o fato de que para se obter uma boa covertura, se faz necessidade não somente testar os resultados das funções, mas também de provacar exceções, ou seja, uma boa taxa de covertura não consiste somente em testar o resultado de uma função, mas também testar o erro, dessa forma, se faz necessário provacar exceções, portanto, um test baseado somente em resultados nunca atingirá 100% de cobertura.</p>
+<h3 id="The-Coverage"><a href="#The-Coverage" class="headerlink" title="The Coverage"></a>The Coverage</h3><p>Após finalizado o test, é gerado um relátorio que informa qual é a cobertura do código, a “coverage”.<br>Basicamente, esse relatório explica quais regiões do código os tests estão “fracos” ou “fortes”, permitindo assim, que o “Tester” saiba exatamente quais métodos estão sendo negligênciadas, permitindo a criação de tests para aquela determinada região.<br>Um outro ponto importante dos testes unitários, é o fato de que para se obter uma boa cobertura, se faz necssário não somente testar os resultados das métodos, mas também provacar exceções.<br>Ou seja, uma boa taxa de cobertura não consiste somente em testar o resultado de uma função, mas também testar o erro, dessa forma, um test baseado somente em resultados nunca atingirá 100% de cobertura.</p>
 <p><img src="/assets/data/apidoc-sdk-tests-04/sdk-coverage.png" alt="Coverage"></p>
-<h3 id="The-Badge"><a href="#The-Badge" class="headerlink" title="The Badge"></a>The Badge</h3><p>Eu deixei ess parte para o final, pois é a minha favorita, os “CI” oferecem relatórios, e-mail, e se brincar dá para pra integrar API de robôs para nos ligar ou mandarem SMS, porém, as Badges ficam na cara do repositório, dessa forma, se você visitar o respoitório e uma integração quebrar, logo de cara você ficará sabendo da mal notícia.</p>
+<h3 id="The-Badge"><a href="#The-Badge" class="headerlink" title="The Badge"></a>The Badge</h3><p>Eu deixei ess parte para o final, pois é a minha favorita.<br>É comum entrar em repositórios e ver vários badges, basicamente eles podem estar conectados a relatórios, como “action github” ou outros tipos de serviços, como “CI”, no caso do repositório “Api Doc - JS SDK”, eu estou utilizando o badge do “Travis”, que permite uma visualização rápida da última integração realizada.</p>
 <p><img src="/assets/data/apidoc-sdk-tests-04/codecov-badge.png" alt="CI and Codecov Badges"></p>
-<h3 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges"></a>Challenges</h3><p>Alguns dos desafios que encontrei no desenvolvimento dos tests para projeto foi a mudança do banco de dados “postgres” para “SQLite” durante a integração continua, alguns métodos “Knex” fazem “returning”, que é um método nativo da library Knex, que faz o retorno durante a inserção ou atualização de dados, nesse caso, o returning ainda não está disponível para o banco de dados SQLite, isso me forçou a remover parte dos tests impactando no resultado final da cobertura.</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -573,30 +572,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/04/28/apidoc-sdk-tests-04/">
+                <a href="/2020/05/02/resp-express/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Tests - 04">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Resp Express">
                         
-                        <span class="card-title">Api Doc - SDK - Tests - 04</span>
+                        <span class="card-title">Resp Express</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Falando sobre tests unitários e como eles foram conduzidos na SDK
+                            Resp Express foi a minha primeira lib, nesse post eu explico minhas motivações e a sua utilidade.
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-02
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -609,7 +607,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -631,10 +628,6 @@
                     
                     <a href="/tags/NPM/">
                         <span class="chip bg-color">NPM</span>
-                    </a>
-                    
-                    <a href="/tags/Tests/">
-                        <span class="chip bg-color">Tests</span>
                     </a>
                     
                 </div>
@@ -942,7 +935,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588159119619')
+  navigator.serviceWorker.register('/sw.js?t=1588465201336')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

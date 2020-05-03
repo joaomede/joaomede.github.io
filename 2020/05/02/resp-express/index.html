@@ -4,8 +4,8 @@
 
 <head><link rel=manifest href=/manifest.json>
     <meta charset="utf-8">
-    <meta name="keywords" content="Api Doc, João M.">
-    <meta name="description" content="Api Doc é um projeto open source que visa facilitar a documentação e tests de Api Rest.">
+    <meta name="keywords" content="Resp Express, João M.">
+    <meta name="description" content="Resp Express foi a minha primeira lib, nesse post eu explico minhas motivações e a sua utilidade.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Api Doc | João M.</title>
+    <title>Resp Express | João M.</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -222,12 +222,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/assets/data/apidoc/electronDesktop.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Api Doc</h1>
+                    <h1 class="description center-align post-title">Resp Express</h1>
                 </div>
             </div>
         </div>
@@ -360,12 +360,8 @@
                                 <span class="chip bg-color">Library</span>
                             </a>
                         
-                            <a href="/tags/vuejs/">
-                                <span class="chip bg-color">vuejs</span>
-                            </a>
-                        
-                            <a href="/tags/quasar-dev/">
-                                <span class="chip bg-color">quasar.dev</span>
+                            <a href="/tags/NPM/">
+                                <span class="chip bg-color">NPM</span>
                             </a>
                         
                     </div>
@@ -389,7 +385,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-04-10
+                    2020-05-02
                 </div>
                 
 
@@ -398,7 +394,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    357
+                    377
                 </div>
                 
 
@@ -415,40 +411,39 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p>Há algum tempo pensei em desenvolver uma ferramenta similar ao postman e outros, que fosse Open Source e tivesse uma boa interface mobile além de armazenar tudo em banco de dados.<br>Comecei então a desenvolver o “Api Doc”, inicialmente, ele foi pensado em NoQSL, mais especificamente em “MongoDB”, porém, com o tempo decidi mudar para bancos relacionais, e encontrei no “Knex” uma ótima solução rápida, inicialmente o objeto principal foi modelado com a seguinte estrutura:</p>
+                <h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p><a href="https://github.com/joaomede/resp-express" target="_blank" rel="noopener">Resp Express</a> foi a minha primeira Library publicada no <a href="https://www.npmjs.com/package/resp-express" target="_blank" rel="noopener">npmjs</a>, eu já vinha utilizando-a há algum tempo nos projetos privados e decidi que publicá-la para facilitação.<br>Trata-se de um simples encapsulamento do método de resposta da library “ExpressJS”, vamos lá!</p>
+<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>A principal motivação para publicação dessa library foi o “Laboratório”, como pesquisador e desenvolvedor eu estou sempre construindo laboratórios para compreender determinados conceitos, nesse sentido, criei essa library para aprender como publicar uma library, com atender determinados requisitos para que a mesma pudesse funcionar em diferentes padrões JS e Typescript.</p>
+<h3 id="The-Library"><a href="#The-Library" class="headerlink" title="The Library"></a>The Library</h3><p>A library, hoje, encapsula 7 variações de respostas, sendo elas;</p>
+<ul>
+<li>returnSucessMessage</li>
+<li>returnSucessObject</li>
+<li>returnErrorMessage</li>
+<li>returnErrorObject</li>
+<li>returnObjectWithCode</li>
+<li>returnErrorCode</li>
+<li>returnSucessCode</li>
+</ul>
+<p>Segue abaixo alguns exemplos de uso.</p>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> resp-express
+<span class="token comment" spellcheck="true"># or</span>
+yarn add resp-express</code></pre>
+<h3 id="Import"><a href="#Import" class="headerlink" title="Import"></a>Import</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> resp <span class="token keyword">from</span> <span class="token string">"resp-express"</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// or</span>
+<span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"resp-express"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">default</span><span class="token punctuation">;</span></code></pre>
+<h3 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h3><pre class=" language-javascript"><code class="language-javascript">app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  resp<span class="token punctuation">.</span><span class="token function">returnSucessMessage</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> <span class="token string">"Sucess !!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Ao digitar “resp.”, aparecerá todos os métodos, semanticamente, iniciando com a palavra “return”, por exemplo; “returnSucessMessage”.<br>No exemplo, “returnSucessMessage”, ele aceita 2 parâmetros, sendo eles;</p>
+<ul>
+<li>res; o Object “Response” do express.</li>
+<li>message; uma String que será enviada como resultado da Request.</li>
+</ul>
+<p>Um exemplo do objeto que será retornado;</p>
 <pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-  "api<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> tag<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> reponses<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span>
+  <span class="token property">"ok"</span><span class="token operator">:</span> <span class="token string">"Sucess !!"</span>
 <span class="token punctuation">}</span></code></pre>
-<h2 id="The-Projects"><a href="#The-Projects" class="headerlink" title="The Projects"></a>The Projects</h2><p>Na versão relacional, as entidades foram separadas e passaram a serem aninhadas no frontend, com a reactividade Vuejs.<br>Devido ao aumento do projeto, decidi migrar algumas regras para uma SDK, que permitiria qualquer desenvolvedor começar um novo frontend e até mesmo uma nova Api com novas regras ou um outro sistema de permissões de usuário, abaixo a estrutura dos projetos:</p>
-<p><strong>Api Doc</strong></p>
-<ul>
-<li>Frontend (vuejs/quasar) “javascript”</li>
-<li>Api Rest (express.js) “typescript</li>
-</ul>
-<p><strong>SDK</strong></p>
-<ul>
-<li>Knex (settings)</li>
-<li>Crud Functions (Methods)</li>
-<li>Auth</li>
-</ul>
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>Atualmente, o projeto conta com suporte para os métodos básicos: GET, POST, PUT e DELETE, suporta Headers, Querys e Params, o sistema também conta com autenticação e registro de emails, sistema de documentação privada, pública e compartilhada, onde também é possível embutir a documentação em outros sites</p>
-<h2 id="Builds"><a href="#Builds" class="headerlink" title="Builds"></a>Builds</h2><p>O Api Doc, com ajuda do framework Vuejs e a Lib Quasar, é possível gerar builds SPA, SPA PWA, SPA PWA SSR, além de Electron para Windows e Linux, também é possível gerar cordova e outros híbridros, porém, não tenho testado estas versões.</p>
-<h2 id="Want-to-help-the-project"><a href="#Want-to-help-the-project" class="headerlink" title="Want to help the project?"></a>Want to help the project?</h2><p>O projeto Api Doc nasceu da minha vontade de melhorar enquanto programador, portanto, ele está aberto a todos, faça um fork e vamos lá!</p>
-<h2 id="Gallery"><a href="#Gallery" class="headerlink" title="Gallery"></a>Gallery</h2><table>
-<thead>
-<tr>
-<th align="center">Mobile</th>
-<th align="center">Mobile</th>
-<th align="center">Mobile</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/assets/data/apidoc/mobile1.png" alt=""></td>
-<td align="center"><img src="/assets/data/apidoc/mobile2.png" alt=""></td>
-<td align="center"><img src="/assets/data/apidoc/mobile2.png" alt=""></td>
-</tr>
-</tbody></table>
-<p><img src="/assets/data/apidoc/electronDesktop.png" alt="Api Doc - Cliente linux ou windows"></p>
+<p>Seguindo essa lógica, alguns métodos vão ter a key <strong>“ok”</strong> ou <strong>“error”</strong> implicíto, fazendo necessário passar apenas o conteúdo, outros métodos como <strong>“returnSucessObject”</strong>, necessitará do <strong>object</strong> que será retornado, não possuirá a key <strong>“ok”</strong> implícita, outros método como <strong>“returnErrorMessage”</strong>, retornará sempre um objeto e conterá sempre o <strong>status 400</strong>.</p>
+<p>Para fazer retornos fora desses padrões, eu escrevi os métodos <strong>“returnObjectWithCode”</strong>, que aceita <strong>Status Code</strong> e <strong>Object</strong> como parâmetros, podendo ser usado para retornar <strong>Sucess</strong> ou <strong>Error</strong> Response.<br>Os métodos <strong>“returnSucessCode”</strong> e <strong>“returnErrorCode”</strong> tem funcionalidade parecida, eles também aceitam <strong>Status</strong> e <strong>Object</strong> como parâmetros, devendo ser usado respectivamente para retornar <strong>“Sucess”</strong> ou <strong>“Error”</strong>.</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -492,7 +487,7 @@
                     </i>
                 </span>
                 <span class="reprint-info" style="word-wrap: break-word;">
-                    <a href="http://joaomede.github.io/2020/04/10/apidoc/">http://joaomede.github.io/2020/04/10/apidoc/</a>
+                    <a href="http://joaomede.github.io/2020/05/02/resp-express/">http://joaomede.github.io/2020/05/02/resp-express/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -546,12 +541,8 @@
                                     <span class="chip bg-color">Library</span>
                                 </a>
                             
-                                <a href="/tags/vuejs/">
-                                    <span class="chip bg-color">vuejs</span>
-                                </a>
-                            
-                                <a href="/tags/quasar-dev/">
-                                    <span class="chip bg-color">quasar.dev</span>
+                                <a href="/tags/NPM/">
+                                    <span class="chip bg-color">NPM</span>
                                 </a>
                             
                         </div>
@@ -593,28 +584,96 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/04/26/apidoc-sdk-introduction-01/">
+                <a href="/2020/05/02/resp-express/">
                     <div class="card-image">
                         
-                        <img src="/assets/data/apidoc/electronDesktop.png" class="responsive-img" alt="Api Doc - SDK - Introduction - 01">
                         
-                        <span class="card-title">Api Doc - SDK - Introduction - 01</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Resp Express">
+                        
+                        <span class="card-title">Resp Express</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Api Doc SDK é uma ferramenta de auxilio a construção de um aplicações para criar documentações de API.
+                            Resp Express foi a minha primeira lib, nesse post eu explico minhas motivações e a sua utilidade.
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Open-Source/" class="post-category">
+                                    Open Source
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/typescript/">
+                        <span class="chip bg-color">typescript</span>
+                    </a>
+                    
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                    <a href="/tags/SDK/">
+                        <span class="chip bg-color">SDK</span>
+                    </a>
+                    
+                    <a href="/tags/Library/">
+                        <span class="chip bg-color">Library</span>
+                    </a>
+                    
+                    <a href="/tags/NPM/">
+                        <span class="chip bg-color">NPM</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/04/28/apidoc-sdk-tests-04/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Tests - 04">
+                        
+                        <span class="card-title">Api Doc - SDK - Tests - 04</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Falando sobre tests unitários e como eles foram conduzidos na SDK
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -650,73 +709,8 @@
                         <span class="chip bg-color">NPM</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/04/10/apidoc/">
-                    <div class="card-image">
-                        
-                        <img src="/assets/data/apidoc/electronDesktop.png" class="responsive-img" alt="Api Doc">
-                        
-                        <span class="card-title">Api Doc</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Api Doc é um projeto open source que visa facilitar a documentação e tests de Api Rest.
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-10
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Open-Source/" class="post-category">
-                                    Open Source
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/typescript/">
-                        <span class="chip bg-color">typescript</span>
-                    </a>
-                    
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
-                    </a>
-                    
-                    <a href="/tags/SDK/">
-                        <span class="chip bg-color">SDK</span>
-                    </a>
-                    
-                    <a href="/tags/Library/">
-                        <span class="chip bg-color">Library</span>
-                    </a>
-                    
-                    <a href="/tags/vuejs/">
-                        <span class="chip bg-color">vuejs</span>
-                    </a>
-                    
-                    <a href="/tags/quasar-dev/">
-                        <span class="chip bg-color">quasar.dev</span>
+                    <a href="/tags/Tests/">
+                        <span class="chip bg-color">Tests</span>
                     </a>
                     
                 </div>

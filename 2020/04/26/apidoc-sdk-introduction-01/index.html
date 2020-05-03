@@ -394,14 +394,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    451
+                    532
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    3 Min
                 </div>
                 
 
@@ -411,9 +411,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Api-Doc-The-SDK"><a href="#Api-Doc-The-SDK" class="headerlink" title="Api Doc - The SDK"></a>Api Doc - The SDK</h3><p>Esta é a uma série de postagens que serão numeradas para facilitar o entendimento.</p>
-<p>O projeto api doc - sdk js, é atualmente um submodulo do projeto principal, “Api Doc”, trata-se de uma abstração das regras crud do sistema principal, contendo o ORM “knex” como pacote principal, onde todos os métodos encapsulam as regras do sistema “Api Doc”</p>
-<h3 id="Use-Case"><a href="#Use-Case" class="headerlink" title="Use Case"></a>Use Case</h3><p>Caso um desenvolvor queira iniciar um gerencidor de Documentação de API, ele pode usar essa SDK para começar um novo sistema, inclusive, uma nova API,<br>basicamente, é necessário instalar o pacote SDK e começar a diversão.</p>
+                <h3 id="Api-Doc-The-SDK"><a href="#Api-Doc-The-SDK" class="headerlink" title="Api Doc - The SDK"></a>Api Doc - The SDK</h3><p>Esta é a uma série de postagens que sequencial sobre a <a href="https://github.com/joaomede/api-doc-js-sdk" target="_blank" rel="noopener">Api Doc - JS SDK</a>.<br>O projeto “<a href="https://github.com/joaomede/api-doc-js-sdk" target="_blank" rel="noopener">Api Doc - JS SDK</a>“, é atualmente um submódulo do projeto principal, O <a href="https://github.com/joaomede/Api-Doc" target="_blank" rel="noopener">Api Doc</a>, trata-se de uma abstração das regras crud do sistema principal, contendo o ORM “knex” como pacote principal, onde todos os métodos encapsulam as regras do sistema “<a href="https://github.com/joaomede/Api-Doc" target="_blank" rel="noopener">Api Doc</a>“</p>
+<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>A documentação de API’s é parte fundamental do processo de construção e utilização de API’s, tornando não só a utilização da mesma menos “doloroza” mas também facilitando a sua manutenção, e essa foi a motivação central da construção desse projeto, construir uma tecnologia que facilita-se a documentação e ao mesmo tempo atendende-se os pontos básicos, como testes, etc.</p>
+<h3 id="Use-Case"><a href="#Use-Case" class="headerlink" title="Use Case"></a>Use Case</h3><p>Quando comecei o projeto, pensei em não me limitar ao Framework usado no frontend, o “Vuejs” e muito menos na API Rest, o “ExpressJS”, nesse sentido, decidi abstrair as regras numa SDK, que não só eu como qualquer interessado pudesse recriar o sistema em outras plataformas com um certo grau de flexibilidade</p>
 <h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>Importando o pacote e configurando o “Knex”, muito parecido com a forma original de configuração “Knex”.</p>
 <p>Além de configurar o “Knex”, para acesso ao banco de dados, é necessário também definir uma chave de API, todos os tokens serão gerados com base nesta chave.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> ApiDoc <span class="token keyword">from</span> <span class="token string">"api-doc-js-doc"</span><span class="token punctuation">;</span>
@@ -434,7 +434,7 @@
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">ApiDoc</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>dev<span class="token punctuation">,</span> <span class="token string">"TheApiSecretKey"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <h3 id="Importing-the-Instance"><a href="#Importing-the-Instance" class="headerlink" title="Importing the Instance"></a>Importing the Instance</h3><p>Após definir a configuração básica do pacote, é necessário importar a instancia e chamar os métodos</p>
-<h3 id="Register-New-User"><a href="#Register-New-User" class="headerlink" title="Register New User"></a>Register New User</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
+<h3 id="Register"><a href="#Register" class="headerlink" title="Register"></a>Register</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">"name"</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> email <span class="token operator">=</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">;</span>
@@ -461,7 +461,7 @@ apiDoc
   <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// return an eventual error</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="Get-a-JWT-Login-Authentication"><a href="#Get-a-JWT-Login-Authentication" class="headerlink" title="Get a JWT (Login/Authentication)"></a>Get a JWT (Login/Authentication)</h3><p>Para realizar uma autenticação, basta usar o método “userAuth”, passando email e senha como parâmetros, que a sdk vai retornar o objeto “usuário” e um token de JWT para válido.</p>
+<h3 id="Authentication"><a href="#Authentication" class="headerlink" title="Authentication"></a>Authentication</h3><p>Para realizar uma autenticação, basta usar o método “userAuth”, passando email e senha como parâmetros, que a sdk vai retornar o objeto “usuário” e um token de JWT para válido.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> apiDoc <span class="token keyword">from</span> <span class="token string">"../config/api"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> email <span class="token operator">=</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">;</span>
@@ -994,7 +994,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588159119619')
+  navigator.serviceWorker.register('/sw.js?t=1588465201336')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
