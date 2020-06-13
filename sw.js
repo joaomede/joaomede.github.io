@@ -19,7 +19,7 @@
 self.addEventListener('install', function () { return self.skipWaiting(); });
 self.addEventListener('active', function () { return self.clients.claim(); });
 
-toolbox.precache(['/','/2020/05/02/resp-express/','/2020/04/28/apidoc-sdk-tests-04/','/2020/04/27/apidoc-sdk-semantics-and-standardization-03/','/2020/04/26/apidoc-sdk-create-a-doc-02/','/2020/04/26/apidoc-sdk-introduction-01/']);
+toolbox.precache(['/','/2020/06/12/auto-deploy-docker-01-introduction/','/2020/05/02/resp-express/','/2020/04/28/apidoc-sdk-04-tests/','/2020/04/27/apidoc-sdk-03-semantics/','/2020/04/26/apidoc-sdk-02-create-a-doc/']);
 toolbox.options = {"networkTimeoutSeconds":5};
 
 toolbox.router.any(/hm.baidu.com/, toolbox.networkOnly);

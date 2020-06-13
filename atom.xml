@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joaomede.github.io/"/>
-  <updated>2020-05-03T00:18:55.523Z</updated>
+  <updated>2020-06-13T00:10:04.369Z</updated>
   <id>http://joaomede.github.io/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Auto Deploy Docker - 01 - Introduction</title>
+    <link href="http://joaomede.github.io/2020/06/12/auto-deploy-docker-01-introduction/"/>
+    <id>http://joaomede.github.io/2020/06/12/auto-deploy-docker-01-introduction/</id>
+    <published>2020-06-12T22:48:28.000Z</published>
+    <updated>2020-06-13T00:10:04.369Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;The-App&quot;&gt;&lt;a href=&quot;#The-App&quot; class=&quot;headerlink&quot; title=&quot;The App&quot;&gt;&lt;/a&gt;The App&lt;/h3&gt;&lt;p&gt;Esta é uma aplicação experimental na qual faz
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://joaomede.github.io/categories/Open-Source/"/>
+    
+    
+      <category term="typescript" scheme="http://joaomede.github.io/tags/typescript/"/>
+    
+      <category term="javascript" scheme="http://joaomede.github.io/tags/javascript/"/>
+    
+      <category term="NPM" scheme="http://joaomede.github.io/tags/NPM/"/>
+    
+      <category term="Docker" scheme="http://joaomede.github.io/tags/Docker/"/>
+    
+      <category term="Deploy" scheme="http://joaomede.github.io/tags/Deploy/"/>
+    
+      <category term="Automation" scheme="http://joaomede.github.io/tags/Automation/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Resp Express</title>
     <link href="http://joaomede.github.io/2020/05/02/resp-express/"/>
     <id>http://joaomede.github.io/2020/05/02/resp-express/</id>
     <published>2020-05-02T22:50:08.000Z</published>
-    <updated>2020-05-03T00:18:55.523Z</updated>
+    <updated>2020-06-11T23:49:38.255Z</updated>
     
     <summary type="html">
     
@@ -52,11 +89,11 @@
   </entry>
   
   <entry>
-    <title>Api Doc - SDK - Tests - 04</title>
-    <link href="http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/"/>
-    <id>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</id>
+    <title>Api Doc - SDK - 04 - Tests</title>
+    <link href="http://joaomede.github.io/2020/04/28/apidoc-sdk-04-tests/"/>
+    <id>http://joaomede.github.io/2020/04/28/apidoc-sdk-04-tests/</id>
     <published>2020-04-28T22:00:25.000Z</published>
-    <updated>2020-05-03T14:49:14.662Z</updated>
+    <updated>2020-06-13T00:09:48.806Z</updated>
     
     <summary type="html">
     
@@ -89,11 +126,11 @@
   </entry>
   
   <entry>
-    <title>Api Doc - SDK - Semantics and Standardization - 03</title>
-    <link href="http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/"/>
-    <id>http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</id>
+    <title>Api Doc - SDK - 03 - Semantics</title>
+    <link href="http://joaomede.github.io/2020/04/27/apidoc-sdk-03-semantics/"/>
+    <id>http://joaomede.github.io/2020/04/27/apidoc-sdk-03-semantics/</id>
     <published>2020-04-27T21:29:05.000Z</published>
-    <updated>2020-05-02T22:38:37.089Z</updated>
+    <updated>2020-06-13T00:09:40.670Z</updated>
     
     <summary type="html">
     
@@ -124,11 +161,11 @@
   </entry>
   
   <entry>
-    <title>Api Doc - SDK - Create a Doc - 02</title>
-    <link href="http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/"/>
-    <id>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</id>
+    <title>Api Doc - SDK - 02 - Create a Doc</title>
+    <link href="http://joaomede.github.io/2020/04/26/apidoc-sdk-02-create-a-doc/"/>
+    <id>http://joaomede.github.io/2020/04/26/apidoc-sdk-02-create-a-doc/</id>
     <published>2020-04-26T20:59:25.000Z</published>
-    <updated>2020-05-02T22:34:13.863Z</updated>
+    <updated>2020-06-13T00:09:31.982Z</updated>
     
     <summary type="html">
     
@@ -159,11 +196,11 @@
   </entry>
   
   <entry>
-    <title>Api Doc - SDK - Introduction - 01</title>
-    <link href="http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/"/>
-    <id>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</id>
+    <title>Api Doc - SDK - 01 - Introduction</title>
+    <link href="http://joaomede.github.io/2020/04/26/apidoc-sdk-01-introduction/"/>
+    <id>http://joaomede.github.io/2020/04/26/apidoc-sdk-01-introduction/</id>
     <published>2020-04-26T19:30:00.000Z</published>
-    <updated>2020-05-02T22:33:56.327Z</updated>
+    <updated>2020-06-13T00:09:06.795Z</updated>
     
     <summary type="html">
     

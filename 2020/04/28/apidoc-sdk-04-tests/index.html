@@ -4,8 +4,8 @@
 
 <head><link rel=manifest href=/manifest.json>
     <meta charset="utf-8">
-    <meta name="keywords" content="Api Doc - SDK - Create a Doc - 02, João M.">
-    <meta name="description" content="Como criar uma documentaçao, usando a SDK do Api Doc">
+    <meta name="keywords" content="Api Doc - SDK - 04 - Tests, João M.">
+    <meta name="description" content="Falando sobre tests unitários e como eles foram conduzidos na SDK">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Api Doc - SDK - Create a Doc - 02 | João M.</title>
+    <title>Api Doc - SDK - 04 - Tests | João M.</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -222,12 +222,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/assets/data/apidoc-sdk-04-tests/tests.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Api Doc - SDK - Create a Doc - 02</h1>
+                    <h1 class="description center-align post-title">Api Doc - SDK - 04 - Tests</h1>
                 </div>
             </div>
         </div>
@@ -364,6 +364,10 @@
                                 <span class="chip bg-color">NPM</span>
                             </a>
                         
+                            <a href="/tags/Tests/">
+                                <span class="chip bg-color">Tests</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -385,7 +389,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-04-26
+                    2020-04-28
                 </div>
                 
 
@@ -394,14 +398,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    214
+                    389
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -411,35 +415,19 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Create-documentation"><a href="#Create-documentation" class="headerlink" title="Create documentation"></a>Create documentation</h3><p>Para criar uma nova documentação, basta chamar o método “createNewApiDoc”, onde será necessário passar o “ID” do usuário e um payload, contendo o objeto a ser criado,<br>abaixo segue um exemplo de como criar o objeto e a estrutura do payload.</p>
-<h3 id="The-Payload"><a href="#The-Payload" class="headerlink" title="The Payload"></a>The Payload</h3><pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"apiName"</span><span class="token operator">:</span> <span class="token string">"Api Test"</span><span class="token punctuation">,</span>
-  <span class="token property">"descriptionApi"</span><span class="token operator">:</span> <span class="token string">"This Api is an Test"</span><span class="token punctuation">,</span>
-  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"v1.0.0"</span><span class="token punctuation">,</span>
-  <span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"email@teste.com"</span><span class="token punctuation">,</span>
-  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"MIT"</span><span class="token punctuation">,</span>
-  <span class="token property">"isPublic"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  <span class="token property">"baseURL"</span><span class="token operator">:</span> <span class="token string">"http://localhost:3000"</span>
-<span class="token punctuation">}</span></code></pre>
-<h3 id="The-Method"><a href="#The-Method" class="headerlink" title="The Method"></a>The Method</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">store</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">try</span> <span class="token punctuation">{</span>
-    <span class="token keyword">await</span> apiDoc<span class="token punctuation">.</span><span class="token function">createNewApiDoc</span><span class="token punctuation">(</span>userId<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'sucess'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// Then/Catch</span>
-apiDoc
-  <span class="token punctuation">.</span><span class="token function">createNewApiDoc</span><span class="token punctuation">(</span>payload<span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token function">thec</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resp<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="About-Security"><a href="#About-Security" class="headerlink" title="About Security"></a>About Security</h3><p>Observem que a SDK não se preocupa com autenticação, as regras de autenticação devem ficar na camada da API da sua aplicação e podem ser modificadas de acordo com seu modelo de aplicação, isso foi feito propositalmente para que a SDK pudesse ser utilizada de forma mais ampla.</p>
+                <h3 id="The-Tests"><a href="#The-Tests" class="headerlink" title="The Tests"></a>The Tests</h3><p>E chegamos na minha parte favorita, os tests!<br>A “Api Doc - SDK” tem como objetivo principal abstrair as regras do API Rest do projeto principal e encapsulá-las.<br>Os métodos realizam, em sua maioria, chamadas de banco de dados, usando a tecnologia “Knex” e todos são exportados individualmente, sendo assim, a menor unidade da SDK pode ser testada, permitindo a implementação dos tests unitários.<br>Pensando em “CI”, passei a executar os tests após os push no projeto “Git”.</p>
+<h3 id="Running-Tests-And-Continuous-Integration"><a href="#Running-Tests-And-Continuous-Integration" class="headerlink" title="Running Tests And Continuous Integration"></a>Running Tests And Continuous Integration</h3><p>Após o push para o respitório Git, a integração continua entra em ação, realizando o script de tests já pré-definido para o projetos, seguindo a seguinte ordem:</p>
+<ol>
+<li>Instalação</li>
+<li>Build</li>
+<li>Tests</li>
+</ol>
+<p><img src="/assets/data/apidoc-sdk-04-tests/logTest.png" alt="All tests"></p>
+<p><img src="/assets/data/apidoc-sdk-04-tests/finish-test-log.png" alt="Result"></p>
+<h3 id="The-Coverage"><a href="#The-Coverage" class="headerlink" title="The Coverage"></a>The Coverage</h3><p>Após finalizado o test, é gerado um relátorio que informa qual é a cobertura do código, a “coverage”.<br>Basicamente, esse relatório explica quais regiões do código os tests estão “fracos” ou “fortes”, permitindo assim, que o “Tester” saiba exatamente quais métodos estão sendo negligênciadas, permitindo a criação de tests para aquela determinada região.<br>Um outro ponto importante dos testes unitários, é o fato de que para se obter uma boa cobertura, se faz necssário não somente testar os resultados das métodos, mas também provacar exceções.<br>Ou seja, uma boa taxa de cobertura não consiste somente em testar o resultado de uma função, mas também testar o erro, dessa forma, um test baseado somente em resultados nunca atingirá 100% de cobertura.</p>
+<p><img src="/assets/data/apidoc-sdk-04-tests/sdk-coverage.png" alt="Coverage"></p>
+<h3 id="The-Badge"><a href="#The-Badge" class="headerlink" title="The Badge"></a>The Badge</h3><p>É comum entrar em repositórios e ver vários badges, basicamente eles podem estar conectados a relatórios, como o “action github” ou outros tipos de serviços.<br>No caso do repositório “Api Doc - JS SDK”, eu estou utilizando o badge do <strong>Travis</strong>, que permite uma visualização rápida da última integração realizada e também a do Codecov, que a visualização prévia do resultado do <strong>Coverage</strong></p>
+<p><img src="/assets/data/apidoc-sdk-04-tests/codecov-badge.png" alt="CI and Codecov Badges"></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -483,7 +471,7 @@ apiDoc
                     </i>
                 </span>
                 <span class="reprint-info" style="word-wrap: break-word;">
-                    <a href="http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/">http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</a>
+                    <a href="http://joaomede.github.io/2020/04/28/apidoc-sdk-04-tests/">http://joaomede.github.io/2020/04/28/apidoc-sdk-04-tests/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -541,6 +529,10 @@ apiDoc
                                     <span class="chip bg-color">NPM</span>
                                 </a>
                             
+                                <a href="/tags/Tests/">
+                                    <span class="chip bg-color">Tests</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -584,24 +576,23 @@ apiDoc
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/04/27/apidoc-sdk-semantics-and-standardization-03/">
+                <a href="/2020/05/02/resp-express/">
                     <div class="card-image">
                         
+                        <img src="/assets/data/resp-express/npm.png" class="responsive-img" alt="Resp Express">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Api Doc - SDK - Semantics and Standardization - 03">
-                        
-                        <span class="card-title">Api Doc - SDK - Semantics and Standardization - 03</span>
+                        <span class="card-title">Resp Express</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Nesse post falarei um pouco sobre a semântica da "Api Doc - SDK" e preocupações que tive com sua padronização.
+                            Resp Express foi a minha primeira lib, nesse post eu explico minhas motivações e a sua utilidade.
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-02
                         </span>
                         <span class="publish-author">
                             
@@ -649,23 +640,24 @@ apiDoc
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/26/apidoc-sdk-introduction-01/">
+                <a href="/2020/04/27/apidoc-sdk-03-semantics/">
                     <div class="card-image">
                         
-                        <img src="/assets/data/apidoc/electronDesktop.png" class="responsive-img" alt="Api Doc - SDK - Introduction - 01">
                         
-                        <span class="card-title">Api Doc - SDK - Introduction - 01</span>
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Api Doc - SDK - 03 - Semantics">
+                        
+                        <span class="card-title">Api Doc - SDK - 03 - Semantics</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Api Doc SDK é uma ferramenta de auxilio a construção de um aplicações para criar documentações de API.
+                            Nesse post falarei um pouco sobre a semântica da "Api Doc - SDK" e preocupações que tive com sua padronização.
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
                             </span>
                         <span class="publish-author">
                             
@@ -942,7 +934,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588517364520')
+  navigator.serviceWorker.register('/sw.js?t=1592007576363')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

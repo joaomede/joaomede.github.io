@@ -4,8 +4,8 @@
 
 <head><link rel=manifest href=/manifest.json>
     <meta charset="utf-8">
-    <meta name="keywords" content="Api Doc - SDK - Tests - 04, João M.">
-    <meta name="description" content="Falando sobre tests unitários e como eles foram conduzidos na SDK">
+    <meta name="keywords" content="Api Doc - SDK - 03 - Semantics, João M.">
+    <meta name="description" content="Nesse post falarei um pouco sobre a semântica da &#34;Api Doc - SDK&#34; e preocupações que tive com sua padronização.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Api Doc - SDK - Tests - 04 | João M.</title>
+    <title>Api Doc - SDK - 03 - Semantics | João M.</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -222,12 +222,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Api Doc - SDK - Tests - 04</h1>
+                    <h1 class="description center-align post-title">Api Doc - SDK - 03 - Semantics</h1>
                 </div>
             </div>
         </div>
@@ -364,10 +364,6 @@
                                 <span class="chip bg-color">NPM</span>
                             </a>
                         
-                            <a href="/tags/Tests/">
-                                <span class="chip bg-color">Tests</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -389,7 +385,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-04-28
+                    2020-04-27
                 </div>
                 
 
@@ -398,14 +394,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    389
+                    252
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -415,19 +411,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="The-Tests"><a href="#The-Tests" class="headerlink" title="The Tests"></a>The Tests</h3><p>E chegamos na minha parte favorita, os tests!<br>A “Api Doc - SDK” tem como objetivo principal abstrair as regras do API Rest do projeto principal e encapsulá-las.<br>Os métodos realizam, em sua maioria, chamadas de banco de dados, usando a tecnologia “Knex” e todos são exportados individualmente, sendo assim, a menor unidade da SDK pode ser testada, permitindo a implementação dos tests unitários.<br>Pensando em “CI”, passei a executar os tests após os push no projeto “Git”.</p>
-<h3 id="Running-Tests-And-Continuous-Integration"><a href="#Running-Tests-And-Continuous-Integration" class="headerlink" title="Running Tests And Continuous Integration"></a>Running Tests And Continuous Integration</h3><p>Após o push para o respitório Git, a integração continua entra em ação, realizando o script de tests já pré-definido para o projetos, seguindo a seguinte ordem:</p>
-<ol>
-<li>Instalação</li>
-<li>Build</li>
-<li>Tests</li>
-</ol>
-<p><img src="/assets/data/apidoc-sdk-tests-04/logTest.png" alt="All tests"></p>
-<p><img src="/assets/data/apidoc-sdk-tests-04/finish-test-log.png" alt="Result"></p>
-<h3 id="The-Coverage"><a href="#The-Coverage" class="headerlink" title="The Coverage"></a>The Coverage</h3><p>Após finalizado o test, é gerado um relátorio que informa qual é a cobertura do código, a “coverage”.<br>Basicamente, esse relatório explica quais regiões do código os tests estão “fracos” ou “fortes”, permitindo assim, que o “Tester” saiba exatamente quais métodos estão sendo negligênciadas, permitindo a criação de tests para aquela determinada região.<br>Um outro ponto importante dos testes unitários, é o fato de que para se obter uma boa cobertura, se faz necssário não somente testar os resultados das métodos, mas também provacar exceções.<br>Ou seja, uma boa taxa de cobertura não consiste somente em testar o resultado de uma função, mas também testar o erro, dessa forma, um test baseado somente em resultados nunca atingirá 100% de cobertura.</p>
-<p><img src="/assets/data/apidoc-sdk-tests-04/sdk-coverage.png" alt="Coverage"></p>
-<h3 id="The-Badge"><a href="#The-Badge" class="headerlink" title="The Badge"></a>The Badge</h3><p>É comum entrar em repositórios e ver vários badges, basicamente eles podem estar conectados a relatórios, como o “action github” ou outros tipos de serviços.<br>No caso do repositório “Api Doc - JS SDK”, eu estou utilizando o badge do <strong>Travis</strong>, que permite uma visualização rápida da última integração realizada e também a do Codecov, que a visualização prévia do resultado do <strong>Coverage</strong></p>
-<p><img src="/assets/data/apidoc-sdk-tests-04/codecov-badge.png" alt="CI and Codecov Badges"></p>
+                <h2 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h2><p>Desde já deixo claro que não sou nenhum especialista no assunto, como informado no “about”, sou apenas um estudante de Análise e Desenvolvimento de Sistemas buscando sempre se aperfeiçoar.<br>Esta SDK é um laborário, mas para além disso, também é uma ferramenta que levo a sério, dito isso, falarei um pouco sobre a padronização e samântica que apliquei em todas as funções da aplicação.</p>
+<h2 id="Create-Delete-Update-And-More"><a href="#Create-Delete-Update-And-More" class="headerlink" title="Create, Delete, Update And More"></a>Create, Delete, Update And More</h2><p>Observem no <strong>IntelliSense</strong> que quando digitado “cre”, automaticamente surgem todos os métodos “create…” disponível na sdk.</p>
+<p><img src="/assets/data/apidoc-sdk-03-semantics/semantics-create.png" alt="Create"></p>
+<p>O mesmo acontece com todos os outros métodos, segue abaixo exemplos.</p>
+<p><img src="/assets/data/apidoc-sdk-03-semantics/semantics-del.png" alt="Delete"><br><img src="/assets/data/apidoc-sdk-03-semantics/semantics-get.png" alt="Get"><br><img src="/assets/data/apidoc-sdk-03-semantics/semantics-update.png" alt="Update"></p>
+<h2 id="IntelliSense-and-Highlights"><a href="#IntelliSense-and-Highlights" class="headerlink" title="IntelliSense and Highlights"></a>IntelliSense and Highlights</h2><p>Caso digite “ById”, o <strong>IntelliSense</strong> vai exibir todos os métodos que contenham “ID”, ou seja, “get by id”, “update by id”, além disso, me preocupei também com os sentidos quantitativos.<br>Por exemplo: <strong>“get one”</strong> para listar um ou <strong>“get all”</strong> para listar todos.<br>Pensando nos retornos dos métodos, caso você chame <strong>“get one”</strong>, receberá sempre um <strong>objeto</strong>, caso chame <strong>“get all”</strong> receberá sempre um <strong>array</strong>, independentemente da quantidade desse array.</p>
+<p>Ainda falta alguns ajustes relacionado a essa padronização e o projeto está aberto a <strong>pull requests</strong>.</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -471,7 +461,7 @@
                     </i>
                 </span>
                 <span class="reprint-info" style="word-wrap: break-word;">
-                    <a href="http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/">http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</a>
+                    <a href="http://joaomede.github.io/2020/04/27/apidoc-sdk-03-semantics/">http://joaomede.github.io/2020/04/27/apidoc-sdk-03-semantics/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -529,10 +519,6 @@
                                     <span class="chip bg-color">NPM</span>
                                 </a>
                             
-                                <a href="/tags/Tests/">
-                                    <span class="chip bg-color">Tests</span>
-                                </a>
-                            
                         </div>
                     
                 </div>
@@ -576,24 +562,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/05/02/resp-express/">
+                <a href="/2020/04/28/apidoc-sdk-04-tests/">
                     <div class="card-image">
                         
+                        <img src="/assets/data/apidoc-sdk-04-tests/tests.png" class="responsive-img" alt="Api Doc - SDK - 04 - Tests">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Resp Express">
-                        
-                        <span class="card-title">Resp Express</span>
+                        <span class="card-title">Api Doc - SDK - 04 - Tests</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Resp Express foi a minha primeira lib, nesse post eu explico minhas motivações e a sua utilidade.
+                            Falando sobre tests unitários e como eles foram conduzidos na SDK
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
                         </span>
                         <span class="publish-author">
                             
@@ -630,6 +615,10 @@
                         <span class="chip bg-color">NPM</span>
                     </a>
                     
+                    <a href="/tags/Tests/">
+                        <span class="chip bg-color">Tests</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -641,24 +630,23 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/27/apidoc-sdk-semantics-and-standardization-03/">
+                <a href="/2020/04/26/apidoc-sdk-02-create-a-doc/">
                     <div class="card-image">
                         
+                        <img src="/assets/data/apidoc-sdk-02-create-a-doc/document.jpg" class="responsive-img" alt="Api Doc - SDK - 02 - Create a Doc">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Api Doc - SDK - Semantics and Standardization - 03">
-                        
-                        <span class="card-title">Api Doc - SDK - Semantics and Standardization - 03</span>
+                        <span class="card-title">Api Doc - SDK - 02 - Create a Doc</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Nesse post falarei um pouco sobre a semântica da "Api Doc - SDK" e preocupações que tive com sua padronização.
+                            Como criar uma documentaçao, usando a SDK do Api Doc
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
                             </span>
                         <span class="publish-author">
                             
@@ -935,7 +923,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588517364520')
+  navigator.serviceWorker.register('/sw.js?t=1592007576363')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

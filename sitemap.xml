@@ -2,37 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-tests-04/</loc>
+    <loc>http://joaomede.github.io/2020/06/12/auto-deploy-docker-01-introduction/</loc>
     
-    <lastmod>2020-05-03T14:49:14.662Z</lastmod>
+    <lastmod>2020-06-13T00:10:04.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/28/apidoc-sdk-04-tests/</loc>
+    
+    <lastmod>2020-06-13T00:09:48.806Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/27/apidoc-sdk-03-semantics/</loc>
+    
+    <lastmod>2020-06-13T00:09:40.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-02-create-a-doc/</loc>
+    
+    <lastmod>2020-06-13T00:09:31.982Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-01-introduction/</loc>
+    
+    <lastmod>2020-06-13T00:09:06.795Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://joaomede.github.io/2020/05/02/resp-express/</loc>
     
-    <lastmod>2020-05-03T00:18:55.523Z</lastmod>
+    <lastmod>2020-06-11T23:49:38.255Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</loc>
+    <loc>http://joaomede.github.io/tags/automation.html</loc>
     
-    <lastmod>2020-05-02T22:38:37.089Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-create-a-doc-02/</loc>
-    
-    <lastmod>2020-05-02T22:34:13.863Z</lastmod>
+    <lastmod>2020-06-11T23:01:22.450Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/2020/04/26/apidoc-sdk-introduction-01/</loc>
+    <loc>http://joaomede.github.io/tags/deploy.html</loc>
     
-    <lastmod>2020-05-02T22:33:56.327Z</lastmod>
+    <lastmod>2020-06-11T23:00:44.626Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/tags/docker.html</loc>
+    
+    <lastmod>2020-06-11T23:00:27.119Z</lastmod>
     
   </url>
   
@@ -72,20 +100,6 @@
   </url>
   
   <url>
-    <loc>http://joaomede.github.io/categories/opensource.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joaomede.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://joaomede.github.io/tags/javascript.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
@@ -93,7 +107,21 @@
   </url>
   
   <url>
+    <loc>http://joaomede.github.io/categories/opensource.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://joaomede.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-04-10T17:23:53.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joaomede.github.io/tags/index.html</loc>
     
     <lastmod>2020-04-10T17:23:53.266Z</lastmod>
     

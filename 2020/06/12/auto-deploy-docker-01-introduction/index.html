@@ -4,8 +4,8 @@
 
 <head><link rel=manifest href=/manifest.json>
     <meta charset="utf-8">
-    <meta name="keywords" content="Api Doc - SDK - Semantics and Standardization - 03, João M.">
-    <meta name="description" content="Nesse post falarei um pouco sobre a semântica da &#34;Api Doc - SDK&#34; e preocupações que tive com sua padronização.">
+    <meta name="keywords" content="Auto Deploy Docker - 01 - Introduction, João M.">
+    <meta name="description" content="Auto Deploy Docker, como o nome sugere, é um aplicação de implantação de container docker, feita com vuejs no front e api em express.js">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Api Doc - SDK - Semantics and Standardization - 03 | João M.</title>
+    <title>Auto Deploy Docker - 01 - Introduction | João M.</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -222,12 +222,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/assets/data/auto-deploy-docker-01-introduction/docker.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Api Doc - SDK - Semantics and Standardization - 03</h1>
+                    <h1 class="description center-align post-title">Auto Deploy Docker - 01 - Introduction</h1>
                 </div>
             </div>
         </div>
@@ -352,16 +352,20 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/SDK/">
-                                <span class="chip bg-color">SDK</span>
-                            </a>
-                        
-                            <a href="/tags/Library/">
-                                <span class="chip bg-color">Library</span>
-                            </a>
-                        
                             <a href="/tags/NPM/">
                                 <span class="chip bg-color">NPM</span>
+                            </a>
+                        
+                            <a href="/tags/Docker/">
+                                <span class="chip bg-color">Docker</span>
+                            </a>
+                        
+                            <a href="/tags/Deploy/">
+                                <span class="chip bg-color">Deploy</span>
+                            </a>
+                        
+                            <a href="/tags/Automation/">
+                                <span class="chip bg-color">Automation</span>
                             </a>
                         
                     </div>
@@ -385,7 +389,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-04-27
+                    2020-06-12
                 </div>
                 
 
@@ -394,14 +398,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    253
+                    608
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -411,13 +415,30 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h2><p>Desde já deixo claro que não sou nenhum especialista no assunto, como informado no “about”, sou apenas um estudante de Análise e Desenvolvimento de Sistemas buscando sempre se aperfeiçoar.<br>Esta SDK é um laborário, mas para além disso, também é uma ferramenta que levo a sério, dito isso, falarei um pouco sobre a padronização e samântica que apliquei em todas as funções da aplicação.</p>
-<h2 id="Create-Delete-Update-And-More"><a href="#Create-Delete-Update-And-More" class="headerlink" title="Create, Delete, Update And More"></a>Create, Delete, Update And More</h2><p>Observem no <strong>IntelliSense</strong> que quando digitado “cre”, automaticamente surgem todos os métodos “create…” disponível na sdk.</p>
-<p><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-create.png" alt="Create"></p>
-<p>O mesmo acontece com todos os outros métodos, segue abaixo exemplos.</p>
-<p><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-del.png" alt="Delete"><br><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-get.png" alt="Get"><br><img src="/assets/data/apidoc-sdk-semantics-and-standardization-03/semantics-update.png" alt="Update"></p>
-<h2 id="IntelliSense-Highlights-and-Standardization"><a href="#IntelliSense-Highlights-and-Standardization" class="headerlink" title="IntelliSense, Highlights and Standardization"></a>IntelliSense, Highlights and Standardization</h2><p>Caso digite “ById”, o <strong>IntelliSense</strong> vai exibir todos os métodos que contenham “ID”, ou seja, “get by id”, “update by id”, além disso, me preocupei também com os sentidos quantitativos.<br>Por exemplo: <strong>“get one”</strong> para listar um ou <strong>“get all”</strong> para listar todos.<br>Pensando nos retornos dos métodos, caso você chame <strong>“get one”</strong>, receberá sempre um <strong>objeto</strong>, caso chame <strong>“get all”</strong> receberá sempre um <strong>array</strong>, independentemente da quantidade desse array.</p>
-<p>Ainda falta alguns ajustes relacionado a essa padronização e o projeto está aberto a <strong>pull requests</strong>.</p>
+                <h3 id="The-App"><a href="#The-App" class="headerlink" title="The App"></a>The App</h3><p>Esta é uma aplicação experimental na qual faz parte do meu portfólio, trata-se de um Open Source e está disponível no GitHub. <a href="https://github.com/joaomede/Auto-Deploy-Docker" target="_blank" rel="noopener">Auto Deploy Docker</a>.</p>
+<h3 id="The-Solution-and-Problem"><a href="#The-Solution-and-Problem" class="headerlink" title="The Solution and Problem"></a>The Solution and Problem</h3><p>Ao lançar uma nova release no DockerHub, caso tenha alguma versão em produção, pode ser necessário fazer alguma ação manual para atualizar a implantação. A partir dessa necessidade, para evitar ação manual <strong>(stop container, update docker-compose.yml and run)</strong>, decidi construir esta aplicação. Ela tem como objeto central realizar uma rotina de backend para implantar um novo container (dispensando docker-compose) ou reeimplantar/atualizar, caso você lance alguma release no DockerHUB, para tal é necessário fazer uso dos WebHooks oficiais que a plataforma disponibiliza. </p>
+<h3 id="The-API"><a href="#The-API" class="headerlink" title="The API"></a>The API</h3><p>A API Rest dessa aplicação tem como objeto central gerenciar a autentição do frontend, tal como registrar usuário e realizar login, para isso, utilizei Typescript com Express.js e depedências jwt para gerir a questão do token, na API também há uma rota para receber a notificação do webhook DockerHUB na qual inicializa uma rotina de implantação atráves desse gatilho.</p>
+<h3 id="The-Frontend"><a href="#The-Frontend" class="headerlink" title="The Frontend"></a>The Frontend</h3><p>O Frontend do projeto foi construído com Vuejs (javascript). atualmente ele consiste em telas de autenticação (login / register), uma tela para listagem de quais projetos estão cadastrados (conjunto de containers inteligados), e dentro do projeto selecionado há uma listagem containers relacionados, permitindo editar variáveis de ambientes dos containers, configuração network e demais parametros permitidos, assim como criar novas implantações automaticas ou removê-las.</p>
+<h3 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h3><p>Atualmente o projeto dispõe das seguintes configurações Docker</p>
+<ul>
+<li>Image Name</li>
+<li>Container Name</li>
+<li>Commands</li>
+<li>Volume Bindings</li>
+<li>Networks (for now only bridge)</li>
+<li>Work Dir.</li>
+<li>Environments variables</li>
+<li>Tty</li>
+<li>Exposed Ports</li>
+<li>Port Bindings<br>and more settings…</li>
+</ul>
+<h3 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h3><p>Esta aplição não tem como função ou objetivo solucionar problemas de grandes sistemas, se você possui uma VPS com containers e precisa de algo para fazer implantações automáticas,essa aplicação se propõe a resolver o problema, porém, numa pespectiva escalável os grandes servidores como Google, AWS, Azure, etc já oferecem soluções para tal.</p>
+<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>Essa é a tela de autenticação.<br><img src="/assets/data/auto-deploy-docker-01-introduction/auth.png" alt="Authentication"></p>
+<p>Os projetos são listados da seguinte maneira, é aprensetado o titulo do projeto e a Chave (usado para o webhook)<br><img src="/assets/data/auto-deploy-docker-01-introduction/projects_list.png" alt="Create List"></p>
+<p>No ato de criar um novo projeto, será necessário definir o nome, a chave (necessário criar), além da informação se o acesso ao servidor docker será local ou via API (docker api), caso queria poderá adicionar um email para receber noficações das implatanções.<br><img src="/assets/data/auto-deploy-docker-01-introduction/newproject.png" alt="Create Project"></p>
+<p>Caso clique no projeto, abrirá uma tela com detalhes contendo as configurações do projeto, assim como haverá um botão para ir adiante, para a tela dos containers (Container List), também há opções de implantar manualmente “no caso da primeira implantação”<br><img src="/assets/data/auto-deploy-docker-01-introduction/project_datail.png" alt="Create Detail"></p>
+<p>Na tela Container List é possível ver todos os containers pertencentes aquele projeto, assim como a ordem de implantação (qual container vai inciar primeiro)<br><img src="/assets/data/auto-deploy-docker-01-introduction/container_list.png" alt="Container List"></p>
+<p>Ao clicar no botão de criar container, aparecerá o modal contendo todas as opções de criações, atualmente, o projeto não oferece todas as opções da tecnologia, então eu me limitei a oferecer as principais configurações que são listados no tópico Feature<br><img src="/assets/data/auto-deploy-docker-01-introduction/newcontainer_0.png" alt="Create Container - 01"><br><img src="/assets/data/auto-deploy-docker-01-introduction/newcontainer_1.png" alt="Create Container - 01"></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -461,7 +482,7 @@
                     </i>
                 </span>
                 <span class="reprint-info" style="word-wrap: break-word;">
-                    <a href="http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/">http://joaomede.github.io/2020/04/27/apidoc-sdk-semantics-and-standardization-03/</a>
+                    <a href="http://joaomede.github.io/2020/06/12/auto-deploy-docker-01-introduction/">http://joaomede.github.io/2020/06/12/auto-deploy-docker-01-introduction/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -507,16 +528,20 @@
                                     <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/SDK/">
-                                    <span class="chip bg-color">SDK</span>
-                                </a>
-                            
-                                <a href="/tags/Library/">
-                                    <span class="chip bg-color">Library</span>
-                                </a>
-                            
                                 <a href="/tags/NPM/">
                                     <span class="chip bg-color">NPM</span>
+                                </a>
+                            
+                                <a href="/tags/Docker/">
+                                    <span class="chip bg-color">Docker</span>
+                                </a>
+                            
+                                <a href="/tags/Deploy/">
+                                    <span class="chip bg-color">Deploy</span>
+                                </a>
+                            
+                                <a href="/tags/Automation/">
+                                    <span class="chip bg-color">Automation</span>
                                 </a>
                             
                         </div>
@@ -558,29 +583,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/04/28/apidoc-sdk-tests-04/">
+                <a href="/2020/06/12/auto-deploy-docker-01-introduction/">
                     <div class="card-image">
                         
+                        <img src="/assets/data/auto-deploy-docker-01-introduction/docker.png" class="responsive-img" alt="Auto Deploy Docker - 01 - Introduction">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Tests - 04">
-                        
-                        <span class="card-title">Api Doc - SDK - Tests - 04</span>
+                        <span class="card-title">Auto Deploy Docker - 01 - Introduction</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Falando sobre tests unitários e como eles foram conduzidos na SDK
+                            Auto Deploy Docker, como o nome sugere, é um aplicação de implantação de container docker, feita com vuejs no front e api em express.js
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -593,6 +618,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -604,20 +630,20 @@
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/SDK/">
-                        <span class="chip bg-color">SDK</span>
-                    </a>
-                    
-                    <a href="/tags/Library/">
-                        <span class="chip bg-color">Library</span>
-                    </a>
-                    
                     <a href="/tags/NPM/">
                         <span class="chip bg-color">NPM</span>
                     </a>
                     
-                    <a href="/tags/Tests/">
-                        <span class="chip bg-color">Tests</span>
+                    <a href="/tags/Docker/">
+                        <span class="chip bg-color">Docker</span>
+                    </a>
+                    
+                    <a href="/tags/Deploy/">
+                        <span class="chip bg-color">Deploy</span>
+                    </a>
+                    
+                    <a href="/tags/Automation/">
+                        <span class="chip bg-color">Automation</span>
                     </a>
                     
                 </div>
@@ -631,24 +657,23 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/26/apidoc-sdk-create-a-doc-02/">
+                <a href="/2020/05/02/resp-express/">
                     <div class="card-image">
                         
+                        <img src="/assets/data/resp-express/npm.png" class="responsive-img" alt="Resp Express">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Api Doc - SDK - Create a Doc - 02">
-                        
-                        <span class="card-title">Api Doc - SDK - Create a Doc - 02</span>
+                        <span class="card-title">Resp Express</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Como criar uma documentaçao, usando a SDK do Api Doc
+                            Resp Express foi a minha primeira lib, nesse post eu explico minhas motivações e a sua utilidade.
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-02
                             </span>
                         <span class="publish-author">
                             
@@ -925,7 +950,7 @@ $(function () {
     
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1588517364520')
+  navigator.serviceWorker.register('/sw.js?t=1592007576363')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
